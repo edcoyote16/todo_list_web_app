@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block title %}
+    <title>Index - Taskmate</title>
+{% endblock title %}
+
+
+{% block content %}
+
+    <div class="container">
+        <div class= "row mt-3">
+            <div class="col-lg-4">
+                <img src="{% static 'images/absolutvision-82TpEld0_e4-unsplash.jpg' %}" alt="Notes" class="rounded-lg shadow-lg" width="350" height="240">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/kyle-glenn-kvIAk3J_A1c-unsplash.jpg' %}" alt="Notes" class="rounded-lg shadow-lg" width="350" height="240">
+            </div>
+            <div class="col-lg-4">
+                <img src="{% static 'images/patrick-perkins-ETRPjvb0KM0-unsplash.jpg' %}" alt="Notes" class="rounded-lg shadow-lg" width="350" height="240">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-10 offset-md-1">
+            <center><p class="h1 text-primary">Quick and easy to use</p></center>
+            <center><p class="h2">Fast and reliable</p></center>
+            <center><p class="h5">User-friendly</p></center>
+            <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-secondary btn-lg mt-3 shadow">Let's get started</button></a></center>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock content %}
